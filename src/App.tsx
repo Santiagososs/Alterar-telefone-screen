@@ -12,6 +12,9 @@ import OtpInput from 'react-otp-input';
 import { ConfirmPopup } from 'components/ConfirmPopup';
 import { useSelector } from 'react-redux'
 import { ConfirmBox } from 'components/ConfirmBox';
+import { useMask } from 'hooks/useMask'
+import { maskPhone } from 'mask/maskPhone'
+
 
 
 
@@ -19,6 +22,7 @@ function App() {
 const stateChange = useSelector((state:any)=> state.Confirmpop )
 
 const stateChangeTwo = useSelector((state:any)=> state.ShowConfirmBox )
+const [phoneInput, setPhoneInput] = useMask(maskPhone)
 
 
 
@@ -28,9 +32,9 @@ const stateChangeTwo = useSelector((state:any)=> state.ShowConfirmBox )
         <Pagecontainer>
         <ProcessPageLayout
         appBar={<Header/>}
-        header={<Descriptionheader title={"Editar Telefone"} subtitle={"Seu telefone atual é:"} description={"(88) 9 99636505"}/>}
+        header={<Descriptionheader title={"Editar telefone"} subtitle={"Seu telefone atual é:"} description={"(85) 00000.00000"}/>}
         main={ stateChangeTwo ? <ConfirmBox/> : <Inputdata/>}
-        footer={stateChange ? <ConfirmPopup/> : <Footerbutton/>}       
+        footer={stateChange ? <ConfirmPopup /> : <Footerbutton/>}       
         />      
         
         </Pagecontainer>  

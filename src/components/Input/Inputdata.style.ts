@@ -10,15 +10,15 @@ divcontent:{
 spanstyle:{
     fontSize:14,
     lineHeight:"15,6px",
-    marginLeft:16,
+    marginLeft:9,
     fontWeight:"bold",
     color:"rgba(85, 85, 85, 1)"
 },
     
 stylinput:{
- marginLeft:6,
- marginRight:18,
- width:"95%",
+ width:"105%",
+ marginLeft:-8,
+ alignContent:"center",
 
 }
 

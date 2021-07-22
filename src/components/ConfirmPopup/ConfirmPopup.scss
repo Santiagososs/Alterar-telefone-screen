@@ -13,6 +13,7 @@
   .iconeConfirm{
     position: relative;
     left: -23px;
+    
   }
   
   .alignCenterButton{
@@ -21,6 +22,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    
     
   }
   
@@ -31,6 +33,14 @@
     margin-right: 30px;
     border: none;
     border-radius: 3px;
+  }
+
+  .style-confirm {
+   font-weight: 500px;
+   margin-right: 0;
+   position: relative;
+   font-size: 10px;
+   margin-left: 2px;
   }
 
   

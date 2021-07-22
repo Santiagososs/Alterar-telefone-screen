@@ -15,7 +15,7 @@ export const useStyles = makeStyles({
   title: {
     color: '#EFEFEF',
     marginTop: "12px",
-    fontWeight: "bold",
+    fontWeight: 500,
     marginLeft:20
   },
 
@@ -32,6 +32,7 @@ export const useStyles = makeStyles({
     justifyContent:"center",
     alignItems:"center",
     marginTop:10,
+    marginLeft:25
   },
 
  

@@ -7,7 +7,7 @@ import { useStyles } from './ConfirmPopup.style'
 import confirmicon from 'assets/images/icn-confirmar.svg'
 import './ConfirmPopup.scss'
 import { RootStateOrAny, useSelector, useDispatch } from 'react-redux'
-
+import { ButtonWithFloatingIcon } from 'components/ButtonWithFloatingIcon';
 
 
 const ConfirmPopup: React.FC = () => {
@@ -16,12 +16,12 @@ const ConfirmPopup: React.FC = () => {
 
   const [inputValue, setInputValue] = React.useState("")
   
-  
+  let statePopUp = useSelector((state: any) => state.animationState) as any
   
   const dispatch = useDispatch()
   
   return (
-    
+      
       <Container className={styles.ContainerPopup}>
         <Typography variant="h6" className={styles.title}>
           Digite sua senha
@@ -42,7 +42,7 @@ const ConfirmPopup: React.FC = () => {
 
           <Box className="closeButtonContainer">
             <Button palette="secondary"
-              size="medium"
+              size="small"
               startIcon={<CloseIcon fontSize="large" color="primary" />}
               onClick={() => dispatch({type:"HIDDEN"}) }
             >
@@ -53,20 +53,20 @@ const ConfirmPopup: React.FC = () => {
         
         <div className="alignCenterButton">
           <Box>
-            <Button palette="secondary"
-              size="medium"
-              startIcon={<img src={confirmicon} height={23} width={23} className="iconeConfirm" alt="Icone confirm"/>}
-              onClick={() => {
-                dispatch({type: "SHOWBOX"})
-                dispatch({type:"HIDDEN"})
-              }}
+            <ButtonWithFloatingIcon size="medium" icon={confirmicon} 
+            onClick={() => {
+              dispatch({type: "SHOWBOX"})
+              dispatch({type:"HIDDEN"})
+            }}
             >
-              Confirmar
-            </Button>
+              <span className="style-confirm">
+               Confirmar
+               </span>
+            </ButtonWithFloatingIcon>
           </Box>
         </div>
       </Container>
- 
+    
   )
 }
 export { ConfirmPopup }
