@@ -15,13 +15,23 @@ const ConfirmPopup: React.FC = () => {
   const styles = useStyles()
 
   const [inputValue, setInputValue] = React.useState("")
-  
+
+  const handlePassword = (e: string) => {
+    const regExp = /[0-9]/g;
+    e = e.replaceAll(regExp, '*')
+    setInputValue(e)
+  }
+
+
   let statePopUp = useSelector((state: any) => state.animationState) as any
   
   const dispatch = useDispatch()
   
+  const confirmPopUpAnimation = useSelector((state: any) => state.Confirmpop)
+
   return (
       
+    <Slide direction="up" in={confirmPopUpAnimation} mountOnEnter unmountOnExit>
       <Container className={styles.ContainerPopup}>
         <Typography variant="h6" className={styles.title}>
           Digite sua senha
@@ -34,8 +44,7 @@ const ConfirmPopup: React.FC = () => {
           <OtpInput
             numInputs={4}
             value={inputValue}
-            onChange={setInputValue}
-            isInputSecure
+            onChange={(e: string) => handlePassword(e)} 
             isInputNum
             className="InputContainer"
           />
@@ -66,7 +75,7 @@ const ConfirmPopup: React.FC = () => {
           </Box>
         </div>
       </Container>
-    
+    </Slide>
   )
 }
 export { ConfirmPopup }

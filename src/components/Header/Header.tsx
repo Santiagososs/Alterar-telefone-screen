@@ -17,7 +17,7 @@ export const Header : React.FC = () => {
 
 
     const onCancelButtonClick = () => {
-      alert("Cancelado")
+      alert("Cancelado meu chapa!")
     };
 
 

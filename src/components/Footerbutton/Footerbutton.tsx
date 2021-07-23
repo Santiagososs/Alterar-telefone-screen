@@ -17,7 +17,7 @@ export const Footerbutton: React.FC<ProcessPageFooterProps> = ({
   const dispatch = useDispatch()
   const styles = useStyles();
 
-  const onPreviousButtonClick = () => alert("Voltou");
+  const onPreviousButtonClick = () => alert("Ainda não temos pra onde voltar :(");
 
   return (
     <Box className={styles.buttonsWrapper}>
