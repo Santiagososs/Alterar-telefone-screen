@@ -7,13 +7,22 @@ barstyle:{
     display:"flex",
     alignItems:"center",
     justifyContent:"space-between",
+    height:58,
 },
 cancelimg:{
     marginRight:"5px",
+    width:14,
+    height:14,
 },
 imglogofit:{
-   width:"110%",
-   height:"110%",
+   width:"73.69px",
+   height:"23.09px",
 },
+cancelspan:{
+    width:40,
+    height:12,
+    marginBottom:6.32,
+    marginRight:10.8,
+}
 
 })

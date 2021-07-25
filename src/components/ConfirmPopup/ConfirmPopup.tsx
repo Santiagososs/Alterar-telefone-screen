@@ -8,6 +8,7 @@ import confirmicon from 'assets/images/icn-confirmar.svg'
 import './ConfirmPopup.scss'
 import { RootStateOrAny, useSelector, useDispatch } from 'react-redux'
 import { ButtonWithFloatingIcon } from 'components/ButtonWithFloatingIcon';
+import logoclose from "assets/images/iconclose.svg"
 
 
 const ConfirmPopup: React.FC = () => {
@@ -52,7 +53,7 @@ const ConfirmPopup: React.FC = () => {
           <Box className="closeButtonContainer">
             <Button palette="secondary"
               size="small"
-              startIcon={<CloseIcon fontSize="large" color="primary" />}
+              startIcon={ <img className={styles.logoclosebtn} src={logoclose} alt="logo" />}
               onClick={() => dispatch({type:"HIDDEN"}) }
             >
               Fechar
@@ -65,7 +66,7 @@ const ConfirmPopup: React.FC = () => {
             <ButtonWithFloatingIcon size="medium" icon={confirmicon} 
             onClick={() => {
               dispatch({type: "SHOWBOX"})
-              dispatch({type:"HIDDEN"})
+              //dispatch({type:"HIDDEN"})
             }}
             >
               <span className="style-confirm">

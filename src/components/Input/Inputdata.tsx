@@ -1,6 +1,7 @@
 import React from 'react'
 import {useStyles} from './Inputdata.style'
 import TextField from '@material-ui/core/TextField';
+import Container from '@material-ui/core/Container';
 import "./Inputdata.scss"
 import { maskPhone } from 'mask/maskPhone'
 import { useMask } from 'hooks/useMask'
@@ -19,10 +20,9 @@ export const Inputdata : React.FC = () => {
          
          <div className={styles.divcontent}>
            <span className={styles.spanstyle}>Número de telefone</span>
-            <TextField  value={phoneInput} onChange={onPhoneChange} className="style-input" placeholder="Digite apenas números" id="outlined-basic"variant="outlined"/>
+            <TextField  value={phoneInput} onChange={onPhoneChange} className={styles.stylinput} id="style-input" placeholder="Digite apenas números" variant="outlined"/>
+            
          </div>
     )
         
-
-    
 }

@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 import { theme } from "config/theme";
 
-const padding = 16;
+const padding = 18;
 
 interface StylesProps {
   footerPosition?: "relative" | "fixed";
@@ -18,11 +18,15 @@ export const useStyles = makeStyles<typeof theme, StylesProps>({
   },
   header: {
     padding: 0,
+    width:320,
+    height:133,
+    backgroundColor:"#F9F9F9",
   },
   main: {
     flex: 1,
     backgroundColor: "#FFFFFF",
     padding: padding,
+    
   },
   footer: {
     padding: 0,

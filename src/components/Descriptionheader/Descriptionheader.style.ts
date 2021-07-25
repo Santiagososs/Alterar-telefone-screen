@@ -6,16 +6,18 @@ export const useStyles = makeStyles({
    backgroundColor:"#F9F9F9",
    margin:0,
    padding:0,
+  
   },
+
   title: {
     fontWeight: 700,
     fontSize: 20,
-    paddingTop:28,
+    paddingTop:21,
     color:" rgba(50, 55, 81, 1)",
     fontFamily:"Roboto",
     marginLeft:16,
     backgroundColor:"#F9F9F9",
-
+    
   },
 
   subtitle: {

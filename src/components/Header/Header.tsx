@@ -17,9 +17,8 @@ export const Header : React.FC = () => {
 
 
     const onCancelButtonClick = () => {
-      alert("Cancelado meu chapa!")
+      console.log("Cancelado")
     };
-
 
     return(
         <AppBar position="static" >
@@ -27,7 +26,12 @@ export const Header : React.FC = () => {
         <Box>
           <img className={styles.imglogofit} src={logofit} alt="logo" />
         </Box>
-             <Button palette="secondary" size="small" onClick={onCancelButtonClick}><img className={styles.cancelimg} src={logocancel} alt="logo" />Cancelar</Button>
+             <Button palette="secondary" size="small" onClick={onCancelButtonClick}><img className={styles.cancelimg} src={logocancel} alt="logo"             
+             />
+             <span className={styles.cancelspan}>
+             Cancelar
+             </span>
+             </Button>
         </Toolbar>
         
       </AppBar>

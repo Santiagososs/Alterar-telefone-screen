@@ -5,19 +5,18 @@ divcontent:{
     display:"flex",
     flexDirection:"column",
     flex:1,
-    marginTop:"24%",
+    marginTop:"12%",
 },
 spanstyle:{
-    fontSize:14,
+    fontSize:12,
     lineHeight:"15,6px",
-    marginLeft:9,
+    marginLeft:6,
     fontWeight:"bold",
     color:"rgba(85, 85, 85, 1)"
 },
     
 stylinput:{
- width:"105%",
- marginLeft:-8,
+ 
  alignContent:"center",
 
 }

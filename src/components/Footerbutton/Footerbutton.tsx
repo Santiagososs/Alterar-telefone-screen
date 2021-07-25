@@ -5,6 +5,8 @@ import { Button } from "components/Button";
 import { useStyles } from "./Footerbutton.style";
 import "./Footerbutton.scss"
 import { useDispatch } from 'react-redux'
+import arrownext from "assets/images/NextArrow.svg"
+import arrowback from "assets/images/BackArrow.svg"
 
 
 interface ProcessPageFooterProps {
@@ -17,20 +19,20 @@ export const Footerbutton: React.FC<ProcessPageFooterProps> = ({
   const dispatch = useDispatch()
   const styles = useStyles();
 
-  const onPreviousButtonClick = () => alert("Ainda não temos pra onde voltar :(");
+  const onPreviousButtonClick = () => console.log("nada");
 
   return (
     <Box className={styles.buttonsWrapper}>
       <Button
         palette="secondary"
-        startIcon={<KeyboardArrowLeft color="primary" />}
+        startIcon={<img className={styles.nextlogo} src={arrowback} alt="logo" />}
         onClick={onPreviousButtonClick} 
       >
         Voltar
       </Button>
       <Button
         palette="primary"
-        endIcon={<KeyboardArrowRight color="secondary" />}
+        endIcon={<img className={styles.nextlogo} src={arrownext} alt="logo" />}
         onClick={()=> dispatch({type:"SHOW"})}           
       >
         Próximo

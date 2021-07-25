@@ -5,6 +5,7 @@ export const useStyles = makeStyles({
     display: "flex",
     justifyContent: "space-between",
     padding:16,
+    paddingBottom:18,
 
     "& .MuiButton-root": {
       minWidth: 136,
@@ -31,4 +32,8 @@ export const useStyles = makeStyles({
       right: 0,
     },
   },
+
+  nextlogo:{
+    marginTop:3.2,
+  }
 });
