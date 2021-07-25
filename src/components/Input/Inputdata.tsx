@@ -20,7 +20,7 @@ export const Inputdata : React.FC = () => {
          
          <div className={styles.divcontent}>
            <span className={styles.spanstyle}>Número de telefone</span>
-            <TextField  value={phoneInput} onChange={onPhoneChange} className={styles.stylinput} id="style-input" placeholder="Digite apenas números" variant="outlined"/>
+           <TextField  value={phoneInput} onChange={onPhoneChange} className={styles.stylinput} id="style-input" placeholder="Digite apenas números" variant="outlined"/>
             
          </div>
     )
