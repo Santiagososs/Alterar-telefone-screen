@@ -7,7 +7,10 @@ barstyle:{
     display:"flex",
     alignItems:"center",
     justifyContent:"space-between",
-    height:58,
+    height:48,
+    "& .MuiToolbar-root":{
+        height:48,
+      },
 },
 cancelimg:{
     marginRight:"5px",
@@ -23,6 +26,12 @@ cancelspan:{
     height:12,
     marginBottom:6.32,
     marginRight:10.8,
+},
+
+appbarname:{
+  "& .MuiToolbar-root":{
+    height:48,
+  },
 }
 
 })

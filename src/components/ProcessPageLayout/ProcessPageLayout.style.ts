@@ -14,6 +14,7 @@ export const useStyles = makeStyles<typeof theme, StylesProps>({
     minHeight: "100vh",
     [theme.breakpoints.down("sm")]: {
       padding: 0,
+      
     },
   },
   header: {

@@ -9,7 +9,7 @@ import logofit from "assets/images/logofit.svg"
 import { Button } from "components/Button";
 import { Close } from "@material-ui/icons";
 import logocancel from "assets/images/Shape.svg"
-
+import "./Header.scss"
 
 
 export const Header : React.FC = () => { 
@@ -21,8 +21,8 @@ export const Header : React.FC = () => {
     };
 
     return(
-        <AppBar position="static" >
-        <Toolbar className={styles.barstyle}>
+        <AppBar position="static" className={styles.appbarname} id="toolbarid">
+        <Toolbar className={styles.barstyle} >
         <Box>
           <img className={styles.imglogofit} src={logofit} alt="logo" />
         </Box>
