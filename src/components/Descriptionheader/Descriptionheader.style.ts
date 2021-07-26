@@ -22,7 +22,7 @@ export const useStyles = makeStyles({
 
   subtitle: {
     fontWeight: 500,
-    fontSize: 15,
+    fontSize: 14,
     lineHeight: "16px",
     marginTop:28,
     marginLeft:16,
@@ -34,7 +34,7 @@ export const useStyles = makeStyles({
   description: {
     marginTop:1,
     fontWeight: 500,
-    fontSize: 15,
+    fontSize: 14,
     lineHeight: "16px",
     color:" rgba(50, 55, 81, 1)",
     fontFamily:"Roboto",

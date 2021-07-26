@@ -28,9 +28,9 @@ export const useStyles = makeStyles({
       textAlign: "center",
     },
     "&.MuiButton-sizeSmall": {
-      minWidth: "70px",
+      minWidth: "95px",
       fontSize: "9px",
-      height: "20px"
+      height: "24px"
     },
     "&.MuiButton-sizeLarge": {
       minWidth: "120px",

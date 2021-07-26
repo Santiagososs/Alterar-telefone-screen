@@ -18,8 +18,8 @@ cancelimg:{
     height:14,
 },
 imglogofit:{
-   width:"73.69px",
-   height:"23.09px",
+   width:"67px",
+   height:"21px",
 },
 cancelspan:{
     width:40,

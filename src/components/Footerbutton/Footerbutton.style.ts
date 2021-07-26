@@ -5,8 +5,8 @@ export const useStyles = makeStyles({
     display: "flex",
     justifyContent: "space-between",
     padding:16,
-    paddingBottom:18,
-
+    paddingBottom:24,
+    
     "& .MuiButton-root": {
       minWidth: 136,
       borderRadius: 10,   
@@ -15,7 +15,8 @@ export const useStyles = makeStyles({
     "& .MuiButton-label": {
       display: "block",
       position: "relative",
-    },
+     
+    },  
 
     "& .MuiButton-startIcon, & .MuiButton-endIcon": {
       display: "block",
