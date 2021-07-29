@@ -10,7 +10,7 @@ divcontent:{
 spanstyle:{
     fontSize:12,
     lineHeight:"15,6px",
-    marginLeft:6,
+    marginLeft:3,
     fontWeight:"bold",
     color:"rgba(85, 85, 85, 1)"
 },
