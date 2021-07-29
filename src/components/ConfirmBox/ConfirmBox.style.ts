@@ -3,11 +3,11 @@ import { makeStyles } from "@material-ui/core";
 export const useStyles = makeStyles({
   confirmContainer: {
    
-    height: '100%',
-    width: '100%',
+    height: '205px',
+    width: '285px',
     display: 'flex',
     justifyContent: 'center',
-    marginTop: -37,
+    marginTop: 2,
     zIndex: 300,
     backgroundColor:"#F2F2F2",
   },
